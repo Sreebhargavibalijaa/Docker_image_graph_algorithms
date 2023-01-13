@@ -1,0 +1,11 @@
+From mac:latest
+
+RUN apt update
+RUN apt install python3 -y
+
+WORKDIR /Users/sreebhargavibalija/desktop/docker
+
+
+COPY Graph_algorithms.py ./
+
+CMD ["python3", "Graph_algorithms.py"]
